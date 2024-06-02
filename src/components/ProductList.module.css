@@ -1,0 +1,115 @@
+.imageIcon {
+  height: 110px;
+  width: 110px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.starFillIcon,
+.starFillIcon1,
+.starFillIcon2,
+.starFillIcon3,
+.starIcon {
+  height: 12px;
+  width: 12px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 12px;
+}
+.stars {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.txt {
+  flex: 1;
+  position: relative;
+  line-height: 18px;
+}
+.rating,
+.title {
+  align-self: stretch;
+}
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  color: var(--gray-400);
+}
+.title {
+  position: relative;
+  font-size: var(--body-small-size);
+  line-height: 20px;
+  font-weight: 500;
+}
+.price1,
+.sale {
+  position: relative;
+  white-space: nowrap;
+}
+.price1 {
+  line-height: 28px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 84px;
+}
+.sale {
+  height: 22px;
+  width: 199px;
+  font-size: var(--body-small-size);
+  text-decoration: line-through;
+  line-height: 22px;
+  color: var(--gray-400);
+  display: none;
+}
+.price {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-5xs);
+  font-size: var(--heading-desktop-h5-size);
+}
+.content,
+.price,
+.productList {
+  display: flex;
+  justify-content: flex-start;
+}
+.content {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+  min-width: 178px;
+}
+.productList {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--white-100);
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--body-extra-small-size);
+  color: var(--gray-900);
+  font-family: var(--body-extra-small);
+}
+@media screen and (max-width: 450px) {
+  .imageIcon {
+    flex: 1;
+  }
+  .price1 {
+    font-size: var(--heading-h6-size);
+    line-height: 22px;
+  }
+  .productList {
+    flex-wrap: wrap;
+  }
+}

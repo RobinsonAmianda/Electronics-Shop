@@ -1,0 +1,34 @@
+.department {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-77xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.electronicsStoreLight {
+  width: 100%;
+  position: relative;
+  background-color: var(--white-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media screen and (max-width: 1325px) {
+  .department {
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .department {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

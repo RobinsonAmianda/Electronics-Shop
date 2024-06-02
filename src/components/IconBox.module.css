@@ -1,0 +1,43 @@
+.icon,
+.txt {
+  position: relative;
+}
+.icon {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--br-81xl);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.txt {
+  align-self: stretch;
+  line-height: 24px;
+  font-weight: 600;
+}
+.iconBox,
+.text {
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.iconBox {
+  flex: 1;
+  border-radius: var(--br-xs);
+  background-color: var(--white-25);
+  border: 1px solid var(--white-50);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xl) var(--padding-4xl) var(--padding-11xl);
+  gap: var(--gap-xs);
+  min-width: 285px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--heading-h6-size);
+  color: var(--gray-900);
+  font-family: var(--body-extra-small);
+}

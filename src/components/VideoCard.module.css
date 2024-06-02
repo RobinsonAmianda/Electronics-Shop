@@ -1,0 +1,53 @@
+.imageIcon,
+.time,
+.title {
+  align-self: stretch;
+  position: relative;
+}
+.imageIcon {
+  width: 140px;
+  border-radius: var(--br-5xs);
+  max-height: 100%;
+  object-fit: cover;
+  min-height: 86px;
+}
+.time,
+.title {
+  line-height: 18px;
+}
+.title {
+  margin: 0;
+  font-size: var(--body-small-size);
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+.text,
+.videoCard {
+  display: flex;
+  align-items: flex-start;
+}
+.text {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+  box-sizing: border-box;
+  gap: var(--gap-5xs);
+  min-width: 169px;
+}
+.videoCard {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--body-extra-small-size);
+  color: var(--gray-500);
+  font-family: var(--body-extra-small);
+}
+@media screen and (max-width: 900px) {
+  .videoCard {
+    flex-wrap: wrap;
+  }
+}

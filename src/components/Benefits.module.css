@@ -1,0 +1,106 @@
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 1032px;
+  right: -1034px;
+  bottom: -1032px;
+  left: 1034px;
+  background: linear-gradient(90deg, #accbee, #e7f0fd);
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+}
+.title {
+  margin: 0;
+  width: 537px;
+  position: relative;
+  font-size: inherit;
+  line-height: 32px;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.row,
+.row1,
+.row2,
+.titleWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+}
+.titleWrapper {
+  width: 784px;
+  padding: 0 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+}
+.row,
+.row1,
+.row2 {
+  align-self: stretch;
+  gap: var(--gap-5xl);
+}
+.benefits,
+.iconBoxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.iconBoxes {
+  width: 784px;
+  align-items: flex-start;
+  gap: var(--gap-5xl);
+  z-index: 1;
+  font-size: var(--heading-h6-size);
+}
+.benefits {
+  flex: 1;
+  border-radius: var(--br-base);
+  background-color: var(--gray-50);
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-175xl) var(--padding-xl) var(--padding-239xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-13xl);
+  min-width: 672px;
+  text-align: center;
+  font-size: var(--heading-desktop-h4-size);
+  color: var(--gray-900);
+  font-family: var(--body-extra-small);
+}
+@media screen and (max-width: 1225px) {
+  .benefits {
+    padding-top: var(--padding-107xl);
+    padding-bottom: var(--padding-149xl);
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .row,
+  .row1,
+  .row2 {
+    flex-wrap: wrap;
+  }
+  .benefits {
+    padding-top: var(--padding-63xl);
+    padding-bottom: var(--padding-90xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: var(--font-size-lgi);
+    line-height: 26px;
+  }
+  .benefits {
+    gap: var(--gap-base);
+  }
+}

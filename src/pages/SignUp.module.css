@@ -1,0 +1,51 @@
+.signUp,
+.signUpInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.signUpInner {
+  width: 480px;
+  flex-direction: column;
+  padding: var(--padding-5xs) 0 0;
+  min-width: 480px;
+  max-width: 100%;
+}
+.signUp {
+  width: 100%;
+  position: relative;
+  background-color: var(--white-100);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-5xl) var(--padding-5xl) var(--padding-5xl)
+    var(--padding-293xl);
+  gap: var(--gap-51xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1525px) {
+  .signUpInner {
+    flex: 1;
+  }
+  .signUp {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .signUpInner {
+    min-width: 100%;
+  }
+  .signUp {
+    gap: var(--gap-16xl);
+    padding-left: var(--padding-137xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 850px) {
+  .signUp {
+    gap: var(--gap-mid);
+    padding-left: var(--padding-59xl);
+    box-sizing: border-box;
+  }
+}
